@@ -1,0 +1,20 @@
+{% extends 'Table.html' %}
+
+{% block mainContent %}
+
+<table border="0">
+    <thead>
+    <td><b>Name</b></td>
+    <td><b>Customer ID</b></td>
+    <td><b>Phone Number</b></td>
+    <td><b>Type</b></td>
+    </thead>
+    {% for item in cus %}
+    <tr>
+        <td>{{item}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

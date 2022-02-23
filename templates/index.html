@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+
+    <title>AYZ COLLECTION</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <!--
+
+        -->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/css/fontawesome.css">
+    <link rel="stylesheet" href="static/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="static/css/owl.css">
+
+</head>
+
+<body>
+
+<!-- ***** Preloader Start ***** -->
+<div id="preloader">
+    <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!-- ***** Preloader End ***** -->
+
+<!-- Header -->
+<header class="">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="{{url_for('login')}}"><h2>AYZ <em>COLLECTION</em></h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{url_for('home')}}">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('product')}}">Our Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('about')}}">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('contact')}}">Contact Us</a>
+                    </li>
+                    <!--              drodwn-->
+                    <!-- Example single danger button -->
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <span class="dropbtn">&#9660</span>
+                            <div class="dropdown-content">
+                                <a href="{{url_for('show_customer_entries')}}">Show Customers</a>
+                                <a href="{{url_for('order_list')}}">Add Order</a>
+                                <a href="{{url_for('show_order_entries')}}">Show Orders</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Page Content -->
+<!-- Banner Starts Here -->
+<div class="banner header-text">
+    <div class="owl-banner owl-carousel">
+        <div class="banner-item-01">
+            <div class="text-content">
+                <h4>Best Offer</h4>
+                <h2>New Arrivals On Sale</h2>
+            </div>
+        </div>
+        <div class="banner-item-02">
+            <div class="text-content">
+                <h4>Flash Deals</h4>
+                <h2>Get your best products</h2>
+            </div>
+        </div>
+        <div class="banner-item-03">
+            <div class="text-content">
+                <h4>Last Minute</h4>
+                <h2>Grab last minute deals</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner Ends Here -->
+
+<div class="latest-products">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>Latest Products</h2>
+                    <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="#"><img src="static/images/shirt1.jpeg" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4>Coat</h4></a>
+                        <h6>14000 Rs only</h6>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>Reviews (24)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="#"><img src="static/images/shirt6.jpeg" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4>Shirt</h4></a>
+                        <h6>4000 Rs only</h6>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>Reviews (21)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="#"><img src="static/images/shirt1.jpeg" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4>Shirt</h4></a>
+                        <h6>2000 Rs Only</h6>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>Reviews (36)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="#"><img src="static/images/shirt2.jpeg" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4>Coat</h4></a>
+                        <h6>10,000 Rs Only</h6>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>Reviews (48)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="#"><img src="static/images/shirt3.jpeg" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4>Shirt</h4></a>
+                        <h6>3000 Rs only </h6>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>Reviews (16)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="#"><img src="static/images/shirt4.jpeg" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4>Shirt</h4></a>
+                        <h6>4000 Rs only</h6>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>Reviews (32)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="best-features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>About AYZ COLLECTION</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="left-content">
+                    <h4>Looking for the best products?</h4>
+                    <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">AYZ
+                        COLLECTION
+                    </a> is here to serve our customers with a wonderful service <a rel="nofollow"
+                                                                                    href="https://templatemo.com/contact">Contact
+                        us</a> for more info.</p>
+                    <ul class="featured-list">
+                        <li><a href="#">A Moments of Crafting Surprises
+                            a life is full of Crafting.</a></li>
+                        <li><a href="#">Draw that best, Craft the Best
+                            Giving your Fashion a new Path.
+                        </a></li>
+                        <li><a href="#">A Trendy Sewing
+                            Love your Creativity.</a></li>
+                        <li><a href="#">
+                            The joy of Crafting Best.
+                        </a></li>
+                        <li><a href="#">Desire meets a new thread.</a></li>
+                    </ul>
+                    <a href="about.html" class="filled-button">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right-image">
+                    <img src="static/images/shop_front (1).jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>Creative &amp; Unique <em>AYZ</em> Products</h4>
+                            <p>
+                                Your Favourite thread for Happiness.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="filled-button">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner-content">
+                    <p>Copyright &copy; 2022 AYZ COLLECTION , MIRZA MUKARRAM & MUHAMMAD FAIZAN.
+
+                        <a rel="nofollow noopener" href="#"
+                           target="_blank"></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Additional Scripts -->
+<script src="static/js/custom.js"></script>
+<script src="static/js/owl.js"></script>
+<script src="static/js/slick.js"></script>
+<script src="static/js/isotope.js"></script>
+<script src="static/js/accordions.js"></script>
+
+
+<script language="text/Javascript">
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+
+
+
+
+
+</script>
+
+
+</body>
+
+</html>
